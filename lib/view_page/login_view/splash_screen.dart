@@ -30,8 +30,7 @@ class SplashScreenState extends State<SplashScreen> {
           children: [
             SizedBox(height:45,),
             Center(
-              child: Text(
-                "Welcome", style: TextStyle(fontSize:30, fontWeight: FontWeight.w600),
+              child: Text("Welcome", style: TextStyle(fontSize:30, fontWeight: FontWeight.w600),
               ),
             ),
             Column(
