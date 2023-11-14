@@ -13,6 +13,7 @@ class SplashScreen extends StatefulWidget {
 }
 class SplashScreenState extends State<SplashScreen> {
 
+
   static const String LOGINKEY = 'login';
   @override
   void initState() {
@@ -55,7 +56,7 @@ class SplashScreenState extends State<SplashScreen> {
   var sharedPref = await SharedPreferences.getInstance();
   var isLogin = sharedPref.getBool(LOGINKEY);
 
-  Timer(const Duration(seconds:5),(){
+  Timer(const Duration(seconds:1),(){
    if(isLogin!=null){
      if(isLogin){
        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const PageViewList()));
